@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.AwakeStudios.HikingApp">
+
+    <!-- Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" tools:node="replace" />
+
+    <!-- Storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Foreground services -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <!-- Notifications (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Required by PedometerService / Bridge plugin -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Other -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.kdg.toast.plugin.Bridge"
+        tools:replace="android:icon,android:name">
+
+        <service
+            android:name="com.AwakeStudios.HikingApp.HikeTrackerService"
+            android:foregroundServiceType="location"
+            android:exported="false" />
+
+        <service
+            android:name="com.kdg.toast.plugin.PedometerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.kdg.toast.plugin.HikeTrackerService"
+            android:foregroundServiceType="location"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
