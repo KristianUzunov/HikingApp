@@ -37,6 +37,7 @@ HikeCard is the hike snapshot prefab in the UnityEditor.
 - GPS simulation is available in the Unity Editor for testing
 - Snapshots are saved inside the Hikes folder in gallery on Android and in LocalLow\(yourCompanyName)\HikingApp\Hikes on PC by default if you were to click save on them
 - Map data provided by OpenStreetMap (openstreetmap.org/copyright). Make sure to keep the copyright thing as It's required by law.
+- Images take a bit of time to load in history as the script downloads the map info from the internet.
 
 ## KNOWN BUGS/ISSUES
 - Sometimes after you give the app all permissions the map doesn't start, if that happens just open the app again and it should be fixed
