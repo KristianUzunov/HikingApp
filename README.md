@@ -39,6 +39,6 @@ HikeCard is the hike snapshot prefab in the UnityEditor.
 - Map data provided by OpenStreetMap (openstreetmap.org/copyright). Make sure to keep the copyright thing as It's required by law.
 
 ## KNOWN BUGS/ISSUES
-
+- Sometimes after you give the app all permissions the map doesn't start, if that happens just open the app again and it should be fixed
 - If there is no 'red line' drawn hike doesn't save as there is nothing to save so it just leaves a blank default HikeCard
 - If the app is closed whilst a hike is being recorded the notification for recording a hike stays there and then if you try to open the app again the whole thing crashes, can be fixed by force stopping it through settings
