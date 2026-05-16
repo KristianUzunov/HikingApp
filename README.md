@@ -35,7 +35,6 @@ HikeCard is the hike snapshot prefab in the UnityEditor.
 - The app is Android only, It probably won't work on IOS but don't have an IOS device to test it on, so no idea.
 -  `HikeTracker` MUST be on the AppManager GameObject to work.
 - GPS simulation is available in the Unity Editor for testing
-- Hike data is saved to `Application.persistentDataPath`
 - Snapshots are saved inside the Hikes folder in gallery on Android and in LocalLow\(yourCompanyName)\HikingApp\Hikes on PC by default if you were to click save on them
 - Map data provided by OpenStreetMap (openstreetmap.org/copyright). Make sure to keep the copyright thing as It's required by law.
 
